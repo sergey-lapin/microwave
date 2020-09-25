@@ -1,0 +1,126 @@
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+html, body {
+  display: flex;
+  height: 100%;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.microwave-container{
+  width: 1200px;
+  height: 550px;
+}
+
+.microwave-container .microwave {
+  width: 100%;
+  height: 100%;
+  background-color: grey;
+  display: flex;
+  border-radius: 10px;
+}
+
+.microwave-container .microwave .door-container {
+  width: 80%;
+  height: 100%;
+}
+
+.microwave-container .microwave .door-container .door {
+  height: 100%;
+  width: 100%;
+  border-right: solid 7px black;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+.microwave-container .microwave .door-container .door .handle {
+  position: absolute;
+  height: 90%;
+  width: 50px;
+  background-color: silver;
+  right: 2.5%;
+  cursor: pointer;
+}
+
+.microwave-container .microwave .door-container .door .window-container {
+  height: 80%;
+  width: 95%;
+  background-color:#000000d9;
+  display: flex;
+  align-items: center;
+}
+
+.microwave-container .microwave .door-container .door .window-container .window {
+  height: 80%;
+  width: 80%;
+  background-color: silver;
+  margin-left: 5%;
+  background-image: url(https://i.ya-webdesign.com/images/comic-background-dots-png-5.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  opacity: 0.2;
+}
+
+.microwave-container .microwave .control-panel-container {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.microwave-container .microwave .control-panel-container .control-panel {
+  background-color: #000000d9;
+  height: 80%;
+  width: 90%;
+}
+
+.microwave-container .microwave .control-panel-container .control-panel .clock {
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  color: green;
+  font-family: monospace;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.control-panel .controls {
+  width: 85%;
+  height: 88%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.control-panel .controls .control-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.light {
+  height: 0px;
+  width: 80%;
+  box-shadow: 0px 42px 92px 14px #ffd400;
+  z-index: -1;
+  display: none;
+}
+
+.inside-light {
+  height: 0px;
+  width: 100%;
+  box-shadow: 0px 152px 1004px 84px #ffd40082;
+  display: none;
+}

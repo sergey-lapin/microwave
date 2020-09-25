@@ -1,0 +1,22 @@
+.control-panel .controls .control-row.no-border .button{
+    border: none;
+}
+  
+.control-panel .controls .control-row .button {
+    width: 28%;
+    font-size:11px;
+    text-align: center;
+    font-family: sans-serif;
+    height: 30px;
+    color: white;
+    border: solid 1px white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.control-panel .controls .control-row .button span.smallText {
+    font-size:6px;
+}
+  
