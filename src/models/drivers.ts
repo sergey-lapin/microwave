@@ -53,18 +53,9 @@ let daewooMicroWave: MicroWaveType = {
     ]
 }
 
-let t1000MicroWave: MicroWaveType = {
-    name: 't1000',
-    title: 'T1000',
-    modes: [
-        modes.cook,
-        modes.timer
-    ]
-}
-
 export let microWaveTypes: MicroWaveType[] = [
     fireMicroWave,
     daewooMicroWave,
-    t1000MicroWave
+
 ]
 

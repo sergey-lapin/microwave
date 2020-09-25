@@ -10,7 +10,7 @@ export const MicrowaveSelector = ({ onSelected }: { onSelected: Function }) => {
   let { setValue } = PubSubHook(currentMicrowave);
 
   return (
-    <Select data-testid="select" defaultValue="Daewoo" onSelect={(option) => {
+    <Select data-testid="select" defaultValue={microWaveTypes[0].title} onSelect={(option) => {
       let result = microWaveTypes.find((item2) => item2.name === option)
       result && setValue(result);
       setTimeout(() => {

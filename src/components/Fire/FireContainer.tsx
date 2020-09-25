@@ -125,7 +125,6 @@ export const FireContainer = () => {
 
     const fireInner = React.useRef<FireInnerContainer>(null);
 
-
     React.useLayoutEffect(() => {
         if (timerValue.value === 0) {
             fireInner.current?.removeFire()
